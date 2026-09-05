@@ -1,0 +1,18 @@
+# pyrefly.toml
+
+# Menentukan folder atau file yang akan dipindai oleh Pyrefly
+project-includes = [
+    "**/*.py",
+    "**/*.ipynb"
+]
+
+# Mengabaikan folder virtual environment agar tidak memperlambat pemindaian
+project-excludes = [
+    "**/.*",
+    "**/venv/**"
+]
+
+# Menetapkan mode pemeriksaan tipe data bawaan Meta (pilihan: basic, default, strict)
+[tool.pyrefly]
+typeCheckingMode = "default"
+python-version = "3.12"
